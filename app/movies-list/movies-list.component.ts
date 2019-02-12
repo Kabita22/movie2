@@ -9,27 +9,31 @@ import { Router } from '@angular/router';
   styleUrls: ['./movies-list.component.css']
 })
 export class MoviesListComponent implements OnInit {
-movies:any[];
+movies:Movies[];
+location:string;
+filteredMovies:Movies[];
  imageWidth = 100;
     imageMargin = 2;
   constructor(private router: Router,private loginService: MoviesListService) { 
+    this.location=sessionStorage.getItem('location');
+    console.log("movie list constructor");
     document.getElementById('welcomemsg').style.display = '';
       document.getElementById('login').style.display = '';
         document.getElementById('location').style.display = '';
         document.getElementById('login').innerHTML = 'Logout';
-
-         this.loginService.getMovies()
+        this.loginService.getMovies()
             .subscribe(movies => this.movies = movies);
+            if(this.movies!=null)
+    this.filteredMovies=this.movies.filter(movie=> movie.location == this.location);
   }
 
   ngOnInit() {
-    if(document.getElementById('location').innerHTML=="Bengaluru"){
- 
-    }
-    else if(document.getElementById('location').innerHTML=="Chennai"){
-  }
-  else if(document.getElementById('location').innerHTML=="Chandigarh"){
-
-  }
+    console.log("movie list ngonit");
+    this.location=sessionStorage.getItem('location');
+    this.loginService.getMovies()
+            .subscribe(movies => this.movies = movies);
+    this.loginService.getMovies()
+            .subscribe(movies => this.filteredMovies = movies);
+            
 
 }}

@@ -3,5 +3,6 @@ export class Movies{
     language:string;
     type:string; 
     rating:number;
-    imageSrc:string
+    imageSrc:string;
+    location:string;
 }
