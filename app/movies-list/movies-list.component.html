@@ -1,0 +1,34 @@
+<br><br><br><br><div class="container container-styles">
+	<div class="col-xs-12 col-xs-offset-0">
+		<div class="panel panel-primary">
+			<div class="panel-heading">Movies now in theaters</div>
+			<div class="panel-body padding">
+        <div class="input-group pull-right col-md-3 searchboxpos">
+			<input type="text" class="form-control" placeholder="Search" name="q" [(ngModel)]="listFilter" (change)="searchtext()">
+			<div class="input-group-btn">
+				<button class="btn btn-default">
+					<i class="glyphicon glyphicon-search"></i>
+				</button>
+			</div></div></div>
+     <div class='panel-body'>
+					<table class="table table-striped tablebgcolor" *ngFor="let image of movies" style="float:left">
+						<tr>
+							<td><img [src]='image.imageSrc' width=200 height=100   
+								/></td>
+
+							<td align="left">
+								<div class="txtsize txtcolor">{{image.name}}</div>
+								<!--<div>
+									<app-rating class="ratingcolor" [rate]='image.rating'></app-rating>
+								</div>-->
+								<hr class="hrcolor">
+								<!--<div>Price: {{product.price}}</div>
+
+								<div>Description: {{product.description}}</div>-->
+							</td>
+							<td></td>
+						</tr>
+					</table>
+				</div>
+      <!--<span *ngFor="let image of movies"><img [src]="image.imageSrc" width=200 height=100 hspace=20 vspace=20 />{{image.name}}</span>-->
+			</div></div>

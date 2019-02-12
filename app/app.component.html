@@ -1,0 +1,45 @@
+<div><header class="header"><nav class='navbar navbar-default navbar-fixed-top'>
+		<div class='container-fluid'><br>
+		<span class="headertxtpos" style="color:#ff0080">
+				Movie Ticket Booking</span>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li>
+					<div class="panel-heading text-right" style="display:none;padding:0px;position:relative;top:15px;" id="welcomemsg">Welcome {{userName | titlecase}}</div></li>
+				<li class="divider-vertical"></li>
+				<li>
+					<div class="btn-nav" style="padding-right:15px">
+						<a id="login" class="btn btn-primary btn-small navbar-btn" (click)="login()">{{loginTitle}}</a>
+					</div>
+				</li>
+			
+				<span class="glyphicon glyphicon-map-marker" id="symbol">
+				<select id="location">	<option value="">--select--</option>
+					<option value="Bengaluru">  Bengaluru </option>
+					<option value="Chennai">  Chennai </option>
+					<option value="Chandigarh">  Chandigarh </option></select></span>
+			</ul>
+		</div>
+	</nav>
+	</header><br>
+	
+	<router-outlet></router-outlet></div>
+<!--</div>
+<header class="header">
+	<div>
+	<nav class='navbar navbar-default navbar-fixed-top'>
+		<div class="txtcolor">
+			<span class="headertxtpos">
+				Movie Ticket Booking</span>
+		</div>
+	</nav>
+	</div>
+	</header><br><br>
+<div>
+  <h3 align="center">
+    Welcome to {{ title }}
+  </h3>
+  	<app-login></app-login>
+		
+</div>-->
+
