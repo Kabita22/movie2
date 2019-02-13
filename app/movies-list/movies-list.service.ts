@@ -9,8 +9,9 @@ import { Movies } from './movies';
 export class MoviesListService {
 
   constructor(private http: HttpClient) { }
-  getMovies(): Observable<Movies[]> {
-         return this.http.get<Movies[]>('assets/Movies.json').pipe(
+  getMovies(url:string): Observable<Movies[]> {
+        // return this.http.get<Movies[]>('assets/Movies.json').pipe(
+          return this.http.get<Movies[]>(url).pipe(
             catchError(this.handleError));
     }
 
@@ -18,4 +19,10 @@ export class MoviesListService {
         console.error(err);
         return Observable.throw(err.error() || 'Server error');
     }
+// products:any[];
+//      getProduct(id: number): Observable<Movies> {
+//         return this.getMovies('assets/Movies.json').pipe(
+//             map(products => products.filter(product => product.name === name)[0]));
+//     }
+
 }

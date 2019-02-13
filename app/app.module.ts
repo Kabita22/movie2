@@ -11,6 +11,7 @@ import { MovieDetailsComponent } from './movie-details/movie-details.component';
 import { BookingSummaryComponent } from './booking-summary/booking-summary.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { WelcomeComponent } from './welcome/welcome.component';
+import {RatingComponent } from './rating.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { WelcomeComponent } from './welcome/welcome.component';
     MovieDetailsComponent,
     BookingSummaryComponent,
     CheckoutComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    RatingComponent
   ],
   imports: [
     BrowserModule,

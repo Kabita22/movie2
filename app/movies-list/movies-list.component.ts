@@ -9,31 +9,60 @@ import { Router } from '@angular/router';
   styleUrls: ['./movies-list.component.css']
 })
 export class MoviesListComponent implements OnInit {
-movies:Movies[];
-location:string;
-filteredMovies:Movies[];
+movies:any[];
  imageWidth = 100;
     imageMargin = 2;
-  constructor(private router: Router,private loginService: MoviesListService) { 
-    this.location=sessionStorage.getItem('location');
-    console.log("movie list constructor");
+    imageHeight=100;
+      listFilter: string;
+      errorMessage:string;
+  constructor(private router: Router,private service: MoviesListService) { 
     document.getElementById('welcomemsg').style.display = '';
       document.getElementById('login').style.display = '';
         document.getElementById('location').style.display = '';
         document.getElementById('login').innerHTML = 'Logout';
-        this.loginService.getMovies()
-            .subscribe(movies => this.movies = movies);
-            if(this.movies!=null)
-    this.filteredMovies=this.movies.filter(movie=> movie.location == this.location);
+
+this.service.getMovies('assets/Movies.json')
+            .subscribe(
+            products => {
+                //this.service.products = products;
+                this.movies = products;
+            },
+            error => this.errorMessage = <any>error);
+
+      
   }
+  
 
   ngOnInit() {
-    console.log("movie list ngonit");
-    this.location=sessionStorage.getItem('location');
-    this.loginService.getMovies()
-            .subscribe(movies => this.movies = movies);
-    this.loginService.getMovies()
-            .subscribe(movies => this.filteredMovies = movies);
-            
+//     console.log(document.getElementById('location'));
+    
+//     if(document.getElementById('location').innerText=="Bengaluru"){
+      
+//   this.service.getMovies('assets/bengaluruMovies.json')
+//             .subscribe(movies => this.movies = movies);
+//     }
+//     else if(document.getElementById('location').innerHTML=="Chennai"){
+//       this.service.getMovies('assets/chennaiMovies.json')
+//             .subscribe(movies => this.movies = movies);
+//   }
+//   else if(document.getElementById('location').innerHTML=="Chandigarh"){
+//     this.service.getMovies('assets/chandigarhMovies.json')
+//             .subscribe(movies => this.movies = movies);
+//   }else{
+//  this.service.getMovies('assets/Movies.json')
+//             .subscribe(movies => this.movies = movies);
+//   }
 
-}}
+}
+searchtext() {
+        //this.movies = this.service.products;
+        if (this.listFilter.length > 0) {
+            this.movies = this.movies.filter((product: Movies) =>
+                product.name.toLowerCase().indexOf(this.listFilter) !== -1);
+        }
+    }
+    book(movie:any){
+      // this.router.navigate(['/movie-details',movie]);
+      this.router.navigate(['/movie-details']);
+    }
+}

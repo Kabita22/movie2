@@ -29,12 +29,4 @@ export class AppComponent {
             this._router.navigate(['/welcome']);
         }
     }
-
-    changeLocation(location:string){
-        sessionStorage.setItem('location',location);
-        console.log(sessionStorage.getItem('location'));
-        if(sessionStorage.getItem('isLoggedIn') == 'true'){            
-            this._router.navigate(['/movies-list']);
-        }
-    }
 }

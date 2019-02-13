@@ -1,9 +1,9 @@
- [{"name":"Chalo","language":"Telugu","type":"2D", "rating":4, "imageSrc":"assets/images/chalo.jpg", "location":"blr"},
- {"name":"Kaala","language":"Tamil","type":"2D", "rating":4, "imageSrc":"assets/images/kaala.jpg", "location":"blr"},
- {"name":"KGF","language":"Telugu","type":"2D", "rating":5, "imageSrc":"assets/images/kgf.jpg", "location":"blr1"},
- {"name":"Sarainodu","language":"Telugu","type":"2D", "rating":4, "imageSrc":"assets/images/sarainodu.jpg", "location":"blr1"},
- {"name":"Krishna","language":"Telugu","type":"2D", "rating":4, "imageSrc":"assets/images/krishna.jpg", "location":"blr"},
- {"name":"Savyasachi","language":"Telugu","type":"2D", "rating":4.5, "imageSrc":"assets/images/savyasachi.jpg", "location":"blr1"},
- {"name":"DJ","language":"Telugu","type":"2D", "rating":3, "imageSrc":"assets/images/dj.jpg", "location":"blr1"},
- {"name":"Geetha Govindham","language":"Telugu","type":"2D", "rating":4, "imageSrc":"assets/images/geetagovindam.jpg", "location":"blr"},
- {"name":"Krishnarjuna Yuddham","language":"Telugu","type":"2D", "rating":4.5, "imageSrc":"assets/images/krisharjunaYuddam.jpg", "location":"blr"}]
+ [{"name":"Chalo","language":"Telugu","type":"2D", "rating":4, "imageSrc":"assets/images/chalo.jpg"},
+ {"name":"Kaala","language":"Tamil","type":"2D", "rating":4, "imageSrc":"assets/images/kaala.jpg"},
+ {"name":"KGF","language":"Telugu","type":"2D", "rating":5, "imageSrc":"assets/images/kgf.jpg"},
+ {"name":"Sarainodu","language":"Telugu","type":"2D", "rating":4, "imageSrc":"assets/images/sarainodu.jpg"},
+ {"name":"Krishna","language":"Telugu","type":"2D", "rating":4, "imageSrc":"assets/images/krishna.jpg"},
+ {"name":"Savyasachi","language":"Telugu","type":"2D", "rating":4.5, "imageSrc":"assets/images/savyasachi.jpg"},
+ {"name":"DJ","language":"Hindi","type":"2D", "rating":3, "imageSrc":"assets/images/dj.jpg"},
+ {"name":"Geetha Govindham","language":"Telugu","type":"2D", "rating":4, "imageSrc":"assets/images/geetagovindam.jpg"},
+ {"name":"Krishnarjuna Yuddham","language":"Telugu","type":"2D", "rating":4.5, "imageSrc":"assets/images/krisharjunaYuddam.jpg"}]
