@@ -1,9 +1,9 @@
- [{"name":"Chalo","language":"Telugu","type":"2D", "rating":4, "imageSrc":"assets/images/chalo.jpg"},
- {"name":"Kaala","language":"Tamil","type":"2D", "rating":4, "imageSrc":"assets/images/kaala.jpg"},
+ [{"name":"Dhadak","language":"Hindi","type":"2D", "rating":4, "imageSrc":"assets/images/dhadak.jpg"},
+ {"name":"Guru","language":"Hindi","type":"2D", "rating":4, "imageSrc":"assets/images/guru.jpg"},
  {"name":"KGF","language":"Telugu","type":"2D", "rating":5, "imageSrc":"assets/images/kgf.jpg"},
  {"name":"Sarainodu","language":"Telugu","type":"2D", "rating":4, "imageSrc":"assets/images/sarainodu.jpg"},
- {"name":"Krishna","language":"Telugu","type":"2D", "rating":4, "imageSrc":"assets/images/krishna.jpg"},
- {"name":"Savyasachi","language":"Telugu","type":"2D", "rating":4.5, "imageSrc":"assets/images/savyasachi.jpg"},
- {"name":"DJ","language":"Hindi","type":"2D", "rating":3, "imageSrc":"assets/images/dj.jpg"},
- {"name":"Geetha Govindham","language":"Telugu","type":"2D", "rating":4, "imageSrc":"assets/images/geetagovindam.jpg"},
- {"name":"Krishnarjuna Yuddham","language":"Telugu","type":"2D", "rating":4.5, "imageSrc":"assets/images/krisharjunaYuddam.jpg"}]
+ {"name":"Karan Arjun 2","language":"Hindi","type":"2D", "rating":4, "imageSrc":"assets/images/karanarjun.jpg"},
+ {"name":"Sanju","language":"Hindi","type":"2D", "rating":4.5, "imageSrc":"assets/images/sanju.jpg"},
+ {"name":"Stree","language":"Hindi","type":"2D", "rating":3, "imageSrc":"assets/images/stree.jpg"},
+ {"name":"Sui Dhaga","language":"Hindi","type":"2D", "rating":4, "imageSrc":"assets/images/suidhaga.jpg"},
+ {"name":"Student of the year 2","language":"Hindi","type":"2D", "rating":4.5, "imageSrc":"assets/images/student.jpg"}]
