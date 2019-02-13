@@ -19,10 +19,6 @@ export class MoviesListService {
         console.error(err);
         return Observable.throw(err.error() || 'Server error');
     }
-// products:any[];
-//      getProduct(id: number): Observable<Movies> {
-//         return this.getMovies('assets/Movies.json').pipe(
-//             map(products => products.filter(product => product.name === name)[0]));
-//     }
-
+products:any[];
+   
 }

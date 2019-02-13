@@ -10,9 +10,9 @@ import { Router } from '@angular/router';
 })
 export class MoviesListComponent implements OnInit {
 movies:any[];
- imageWidth = 100;
+ imageWidth = 150;
     imageMargin = 2;
-    imageHeight=100;
+    imageHeight=120;
       listFilter: string;
       errorMessage:string;
   constructor(private router: Router,private service: MoviesListService) { 
@@ -24,7 +24,7 @@ movies:any[];
 this.service.getMovies('assets/Movies.json')
             .subscribe(
             products => {
-                //this.service.products = products;
+                this.service.products = products;
                 this.movies = products;
             },
             error => this.errorMessage = <any>error);
@@ -55,14 +55,19 @@ this.service.getMovies('assets/Movies.json')
 
 }
 searchtext() {
-        //this.movies = this.service.products;
+        this.movies = this.service.products;
         if (this.listFilter.length > 0) {
             this.movies = this.movies.filter((product: Movies) =>
                 product.name.toLowerCase().indexOf(this.listFilter) !== -1);
         }
     }
-    book(movie:any){
+    book(movie:Movies){
       // this.router.navigate(['/movie-details',movie]);
-      this.router.navigate(['/movie-details']);
+      console.log(movie);
+      this.router.navigate(['/movie-details',movie.name]);
+    }
+    sortoption:string;
+     onChange(value: string) {
+        this.sortoption = value;
     }
 }

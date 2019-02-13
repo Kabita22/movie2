@@ -12,6 +12,7 @@ import { BookingSummaryComponent } from './booking-summary/booking-summary.compo
 import { CheckoutComponent } from './checkout/checkout.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import {RatingComponent } from './rating.component';
+import { OrderByPipe } from './movies-list/order.pipe';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import {RatingComponent } from './rating.component';
     BookingSummaryComponent,
     CheckoutComponent,
     WelcomeComponent,
-    RatingComponent
+    RatingComponent,
+    OrderByPipe
   ],
   imports: [
     BrowserModule,

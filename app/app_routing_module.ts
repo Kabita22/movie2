@@ -8,7 +8,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
 
 const appRoutes: Routes = [
   { path: 'movies-list', component: MoviesListComponent },
-   { path: 'movie-details', component: MovieDetailsComponent },
+   { path: 'movie-details/:name', component: MovieDetailsComponent },
   { path: 'login', component: LoginComponent },
    { path: 'welcome', component: WelcomeComponent },
   //{ path: 'products', loadChildren: 'src/app/products/products.module#ProductsModule' },
